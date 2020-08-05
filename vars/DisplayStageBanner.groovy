@@ -19,11 +19,13 @@ def call(stageName) {
   padLen       = ((blanksLen - stageNameLen - 1) / 2) as Integer;
   padBlanks    = blanks.substring(0,padLen);
   
+  stageLine = stageName.padLeft(padLen) + stageName + stageName.padRight(padLen);
+  
   echo """
   $topBottomString
   $middleString
   $middleString
-  *$padBlanks$stageName$padBlanks*
+  *$stageLine*
   $middleString
   $middleString
   $topBottomString
