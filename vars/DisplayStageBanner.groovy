@@ -21,7 +21,7 @@ def call(stageName) {
   
   stageLine = "*" + subBlanks + stageName + subBlanks + "*";
   
-  echo """ \
+  echo """\
 $topBottomString
 $middleString
 $middleString
