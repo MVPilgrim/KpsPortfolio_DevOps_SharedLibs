@@ -16,15 +16,16 @@ def call(stageName) {
   
   stageNameLen = stageName.length();
   blanksLen    = blanks.length();
-  padLen       = ((blanksLen - stageNameLen) / 2) as Integer;
+  padLen       = ((blanksLen - stageNameLen - 1) / 2) as Integer;
   padBlanks    = blanks.substring(0,padLen);
   
-  echo topBottomString;
-  echo middleString;
-  echo middleString;
-  echo "*" + padBlanks + stageName + padBlanks + "*";
-  echo middleString;
-  echo middleString;
-  echo topBottomString;
-
+  echo """
+  $topBottomString
+  $middleString
+  $middleString
+  *$(padBlanks)^(stageName)$(padBlanks)*
+  $middleString
+  $middleString
+  $topBottomString
+  """
 }
