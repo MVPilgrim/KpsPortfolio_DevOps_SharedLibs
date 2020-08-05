@@ -23,7 +23,7 @@ def call(stageName) {
   $topBottomString
   $middleString
   $middleString
-  *$(padBlanks)$(stageName)$(padBlanks)*
+  *$padBlanks$stageName$padBlanks*
   $middleString
   $middleString
   $topBottomString
