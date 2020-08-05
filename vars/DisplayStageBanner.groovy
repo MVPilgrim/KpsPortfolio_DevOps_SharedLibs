@@ -1,15 +1,16 @@
-/************************************************************
+/**********************************************************************
 /* Module: CreateDevTestRelease.groovy
 /*
-/* Description: Display an "eye-catcher" banner in the log file for
-/*              the pipeline stage being executed.
+/* Description: Display an "eye-catcher" banner in the
+/*              log file for the pipeline stage being executed.
 /*
 /* Change Log:
 /*   * KPS 08-04-2020: Initial version.
-/**********************************************************/
+/********************************************************************/
 
 
 def call(stageName) {
+/*
   String topBottomString = "***************************************************************************************";
   String middleString    = "*                                                                                     *";
   String blanks          = "                                                                                       ";
@@ -25,4 +26,5 @@ def call(stageName) {
   echo middleString;
   echo middleString;
   echo topBottomString;
+*/
 }
