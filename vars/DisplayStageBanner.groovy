@@ -15,7 +15,7 @@ def call(stageName) {
   
   stageNameLen = stageName.length();
   padLen       = topBottomString.length();
-  padLen       = ((blanksLen - stageNameLen - 1) / 2) as Integer;
+  padLen       = ((padLen - stageNameLen - 1) / 2) as Integer;
   
   stageLine = "*" + stageName.padLeft(padLen);
   stageLine = stageLine.padRight(padLen) + "*";
