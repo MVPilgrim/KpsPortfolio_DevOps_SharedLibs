@@ -17,8 +17,8 @@ def call(stageName) {
   padLen       = topBottomString.length();
   padLen       = ((padLen - stageNameLen - 1) / 2) as Integer;
   
-  stageLine = "*" + stageName.padLeft(padLen);
-  stageLine = stageLine.padRight(padLen) + "*";
+  stageLine = "*" + stageName.padLeft(padLen,' ');
+  stageLine = stageLine.padRight(padLen,' ') + "*";
   
   echo """
   $topBottomString
