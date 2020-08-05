@@ -10,14 +10,14 @@
 
 
 def call(stageName) {
-  String topBottomString = "***************************************************************************************";
-  String middleString    = "*                                                                                     *";
-  String blanks          = "                                                                                       ";
+  topBottomString = "***************************************************************************************";
+  middleString    = "*                                                                                     *";
+  blanks          = "                                                                                       ";
   
-  //stageNameLen = stageName.length;
-  stageNameLen  = 40;
+  int stageNameLen = stageName.length;
+  //stageNameLen  = 40;
   int halfLen  = (stageNameLen / 2) - 1;
-  String subBlanks = blanks.subString(0,halfLen);
+  subBlanks = blanks.subString(0,halfLen);
   
   echo topBottomString;
   echo middleString;
