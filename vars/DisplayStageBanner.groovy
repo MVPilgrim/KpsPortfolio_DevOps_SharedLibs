@@ -16,12 +16,12 @@ def call(stageName) {
   
   stageNameLen = stageName.length();
   halfLen  = ((stageNameLen / 2) - 1) as Integer;
-  String subBlanks = blanks.substring(0,halfLen);
+  subBlanks = blanks.substring(0,halfLen);
   
   echo topBottomString;
   echo middleString;
   echo middleString;
-  echo "*" + blanks.subBlanks + stageName + subBlanks + "*";
+  echo "*" + subBlanks + stageName + subBlanks + "*";
   echo middleString;
   echo middleString;
   echo topBottomString;
