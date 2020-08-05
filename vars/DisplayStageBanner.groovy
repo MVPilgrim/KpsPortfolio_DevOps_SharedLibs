@@ -12,20 +12,19 @@
 def call(stageName) {
   topBottomString = "***************************************************************************************";
   middleString    = "*                                                                                     *";
-  blanks          = "                                                                                       ";
   
   stageNameLen = stageName.length();
-  blanksLen    = blanks.length();
+  padLen       = topBottomString.length();
   padLen       = ((blanksLen - stageNameLen - 1) / 2) as Integer;
-  padBlanks    = blanks.substring(0,padLen);
   
-  stageLine = stageName.padLeft(padLen) + stageName + stageName.padRight(padLen);
+  stageLine = "*" + stageName.padLeft(padLen);
+  stageLine = stageLine.padRight(padLen) + "*";
   
   echo """
   $topBottomString
   $middleString
   $middleString
-  *$stageLine*
+  $stageLine
   $middleString
   $middleString
   $topBottomString
