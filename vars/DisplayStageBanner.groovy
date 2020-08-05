@@ -14,10 +14,9 @@ def call(stageName) {
   middleString    = "*                                                                                     *";
   blanks          = "                                                                                       ";
   
-  int stageNameLen = stageName.length();
-  //stageNameLen  = 40;
+  stageNameLen = stageName.length();
   halfLen  = ((stageNameLen / 2) - 1) as Integer;
-  subBlanks = blanks.substring(0,halfLen);
+  String subBlanks = blanks.substring(0,halfLen);
   
   echo topBottomString;
   echo middleString;
